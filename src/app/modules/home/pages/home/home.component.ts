@@ -7,15 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public taskList: { id: number; task: string; completed: boolean }[] = [];
+
   constructor() {}
+
   public deletarTarefas(): void {
     this.taskList = [];
     localStorage.removeItem('taskList');
   }
+
   public addTask(task: { id: number; task: string; completed: boolean }) {
-    this.taskList.unshift(task);
+    let lastTaskId = localStorage.getItem('lastTaskId');
+    localStorage.setItem('lastTaskId', `${Number(lastTaskId) + 1}`);
+
+    let newTask = { ...task, id: Number(lastTaskId) + 1 };
+    this.taskList.unshift(newTask);
     localStorage.setItem('taskList', JSON.stringify(this.taskList));
   }
+
   public updateTaskList(payload: any): void {
     let task = this.taskList.find((task) => task.id === payload.taskId);
 
@@ -29,7 +37,10 @@ export class HomeComponent implements OnInit {
 
     localStorage.setItem('taskList', JSON.stringify(this.taskList));
   }
+
   ngOnInit(): void {
+    let lastTaskId = localStorage.getItem('lastTaskId');
+    if (!lastTaskId) localStorage.setItem('lastTaskId', '4');
     let localTaskList = localStorage.getItem('taskList');
     if (localTaskList && localTaskList.length > 0) {
       this.taskList = JSON.parse(localTaskList);
