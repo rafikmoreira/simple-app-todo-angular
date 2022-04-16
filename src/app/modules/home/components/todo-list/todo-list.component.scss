@@ -10,14 +10,18 @@ div {
     border: 3px solid black !important;
     background-color: $tertiary-color;
     li {
-      font-size: 25px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border: 3px solid black !important;
       background-color: $danger-background-color;
       padding: 10px;
       margin-bottom: 10px;
-      .completed {
+      &.completed {
         text-decoration: line-through;
+        background-color: rgb(87, 182, 87);
+      }
+      font-size: 18px;
+      @media (min-width: 970px) {
+        font-size: 25px;
       }
     }
     ul :last-child {
