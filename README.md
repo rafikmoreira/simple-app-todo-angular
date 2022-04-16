@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
+## Figma
+
+[Design](https://www.figma.com/file/bshNg7eEZ8MvbmM5TpJBfO/Angular-To-Do?node-id=0%3A1)
+
+[![App-To-Do-List](https://i.postimg.cc/1ty1fccs/App-To-Do-List.png)](https://postimg.cc/QBYyz7yy)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
