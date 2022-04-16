@@ -1,1 +1,9 @@
-<p>todo-input-add-items works!</p>
+<div class="d-flex justify-content-center">
+  <input
+    [(ngModel)]="task"
+    (keypress)="addTask($event)"
+    type="text"
+    id="task-data"
+    placeholder="Defina a tarefa..."
+  />
+</div>
