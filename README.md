@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 [Design](https://www.figma.com/file/bshNg7eEZ8MvbmM5TpJBfO/Angular-To-Do?node-id=0%3A1)
 
-[![App-To-Do-List](https://i.postimg.cc/1ty1fccs/App-To-Do-List.png)](https://postimg.cc/QBYyz7yy)
+[![App-To-Do-List](https://i.postimg.cc/vHWqWNrW/App-To-Do-List-1.png)](https://postimg.cc/GHmxRzS2)
 
 ## Development server
 
