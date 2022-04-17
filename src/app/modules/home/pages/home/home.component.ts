@@ -46,15 +46,19 @@ export class HomeComponent implements OnInit {
       this.taskList = JSON.parse(localTaskList);
     } else {
       this.taskList = [
-        { id: 1, task: 'Ir ao mercado comprar sabão', completed: false },
+        {
+          id: 1,
+          task: 'Ir ao mercado realizar as compras do mês',
+          completed: false,
+        },
         {
           id: 2,
-          task: 'Dizer para a Tathi que ela precisa de um banho',
+          task: 'Dizer para a Tathi que ela é uma pessoa especial',
           completed: false,
         },
         {
           id: 3,
-          task: 'Ensinar para os professores do IF que slide por si só não é aula',
+          task: 'Terminar de arrumar o quarto',
           completed: false,
         },
         {
